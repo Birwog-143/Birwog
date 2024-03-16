@@ -16,7 +16,7 @@ const start = async () =>{
     try{ 
         await connectDB(process.env.MONGODB_URL);
         
-    app.listen(PORT,()=>{console.log(` Database connected Succecfully, Server is running on ${PORT}`);
+    app.listen(PORT,()=>{console.log(` Database connected Succecfully and Server is running on ${PORT}`);
      });
 } catch(error){
     console.log(error);
