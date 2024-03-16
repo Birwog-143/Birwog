@@ -12,7 +12,7 @@ const Product = require("./models/product");
 //middleware or to set router
 app.use("/api/products",products_routes);
 
-const start = async () =>{
+const start = async () =>{ 
     try{ 
         await connectDB(process.env.MONGODB_URL);
         
